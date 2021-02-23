@@ -1,8 +1,10 @@
+package com.company;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        TableauArg(args);
+        AfficherTableau1(args); //Changer le AfficherTableau1 en AfficherTableau2 pour changer la methode foreach vers la methode java.util.Arrays
         SommeTableau(args);
 
     }
@@ -10,17 +12,25 @@ public class Main {
     public static void SommeTableau(String[] args) {
 
         int somme = 0;
-        for (int i = 0; i < args.length; i++)
+        for (String nombre : args)
 
-            somme = somme + Integer.parseInt(args[i]);
+            somme += Integer.parseInt(nombre.toString());
 
         System.out.println(somme);
     }
 
-    public static void TableauArg(String[] listeArguments) {
+    public static void AfficherTableau1(String[] listeArguments) {
 
         for (String nombre : listeArguments)
             System.out.println(nombre.toString());
     }
 
+    public static void AfficherTableau2(String[] listeArguments) {
+
+        for (int i = 0 ; i< listeArguments.length ; i++)
+            System.out.println(listeArguments[i]);
+    }
+
 }
+
+
