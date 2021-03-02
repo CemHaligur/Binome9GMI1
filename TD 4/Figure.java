@@ -54,5 +54,7 @@ public abstract class Figure {
 
     }
 
+    public abstract float perimetre();
+    public abstract float surface();
 
 }
