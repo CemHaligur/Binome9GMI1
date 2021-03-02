@@ -50,15 +50,8 @@ public class Point {
 
     }
 
-    public boolean equals(Point p2){
-
-        return  ((this.getX() == p2.getX())
-                && (this.getX() == p2.getX()));
-
-    }
-
-    protected void finalize()  {
-
-        System.out.println("Point supprimé " + this);
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
     }
 }

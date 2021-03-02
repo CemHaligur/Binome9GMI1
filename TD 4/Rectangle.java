@@ -6,7 +6,7 @@ public class Rectangle extends Figure{
     // Constructeur
 
 
-    public Rectangle(float largeur, float longueur)
+    public void Rectangle(float largeur, float longueur)
     {
         this.largeur = largeur;
         this.longueur = longueur;

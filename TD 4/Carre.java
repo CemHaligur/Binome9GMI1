@@ -1,4 +1,4 @@
-public class Carre extends Rectangle {
+/*public class Carre extends Rectangle {
 
 
     private float cote;
@@ -53,4 +53,4 @@ public class Carre extends Rectangle {
 
 
 
-}
+} */

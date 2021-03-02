@@ -20,7 +20,7 @@ public class Main {
         l.addPoint(p);
 
         System.out.println(l.toString());
-        l.deletePoint(p3);
+        l.deletePoint(p1);
         System.out.println(l.toString());
 
         //Figure F;
