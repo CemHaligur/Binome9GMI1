@@ -1,9 +1,7 @@
-public class Figure {
+public abstract class Figure {
 
     private String Nom;
     private String Couleur;
-    private float perimetre;
-    private float surface;
 
     // Constructeur
 
@@ -39,6 +37,9 @@ public class Figure {
 
 
     // Autres Methodes
+
+    public abstract float perimetre();
+    public abstract float surface();
 
     public String toString() {
 

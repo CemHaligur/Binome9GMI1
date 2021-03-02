@@ -5,6 +5,7 @@ public class Rectangle extends Figure{
 
     // Constructeur
 
+
     public Rectangle(float largeur, float longueur)
     {
         this.largeur = largeur;
@@ -64,3 +65,4 @@ public class Rectangle extends Figure{
 
 
 }
+
