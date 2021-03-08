@@ -19,7 +19,7 @@ class Lion extends Animal {
     @Override
     public void crier() {
         super.crier();
-        System.out.println("Ce lion de " + poids + " kilos avec une fourrure de " + LongueurFourrure +" cm" + " rugit !" );
+        System.out.println("Ce lion de " + poids + " kilos avec une fourrure de " + LongueurFourrure +" cm" + " rugit grrr !" );
 
     }
 
