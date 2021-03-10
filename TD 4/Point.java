@@ -1,4 +1,4 @@
-public class Point {
+public class Point implements Comparable<Point>{
 
     private int x;
     private int y;
@@ -53,5 +53,19 @@ public class Point {
     @Override
     public boolean equals(Object obj) {
         return super.equals(obj);
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    public int compareTo(Point p) {
+        double dp2 = (double) Math.sqrt(Math.pow(p.getX(),2) + Math.pow(p.getY(),2));
+        double dp = (double) Math.sqrt(Math.pow(this.x,2) + Math.pow(this.y,2));
+        if(dp > dp2)
+            return 1;
+        else
+            return 0;
     }
 }
