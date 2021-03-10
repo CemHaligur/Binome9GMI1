@@ -12,6 +12,17 @@ public class LigneBriseeLinkedList {
         this.points = new LinkedList<Point>();
     }
 
+
+    // Getter et Setter
+
+    public LinkedList<Point> getPoints() {
+        return points;
+    }
+
+    public void setPoints(LinkedList<Point> points) {
+        this.points = points;
+    }
+
     // Autre Methodes
 
     public void add(Point p){

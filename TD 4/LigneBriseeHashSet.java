@@ -9,6 +9,17 @@ public class LigneBriseeHashSet {
         this.points = new HashSet();
     }
 
+    // Accesseur et Mutateurs
+
+    public HashSet<Point> getPoints() {
+        return points;
+    }
+
+    public void setPoints(HashSet<Point> points) {
+        this.points = points;
+    }
+
+
     // Autre Methodes
 
     public void add(Point p){

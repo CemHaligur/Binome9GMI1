@@ -9,6 +9,19 @@ public class LigneBriseeHashMap {
         this.points = new HashMap<Point, String>();
     }
 
+    // Accesseurs
+
+    public HashMap<Point, String> getPoints() {
+        return points;
+    }
+
+    // Mutateurs
+
+    public void setPoints(HashMap<Point, String> points) {
+        this.points = points;
+    }
+
+
     // Autre Methodes
 
     public void add(Point p){

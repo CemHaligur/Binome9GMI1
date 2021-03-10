@@ -17,15 +17,14 @@ public class LigneBriseeArrayList {
 
     // accesseurs
 
-    public ArrayList<Point> getPoint(){
-
+    public ArrayList<Point> getPoints() {
         return points;
     }
 
+
     // mutateurs
 
-    public void setPoints(ArrayList<Point> points){
-
+    public void setPoints(ArrayList<Point> points) {
         this.points = points;
     }
 
