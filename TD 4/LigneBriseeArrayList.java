@@ -33,19 +33,30 @@ public class LigneBriseeArrayList {
 
 
     public void add(Point p){
-        this.points.add(p);
+        if(!contientPoints(p)){
+        this.points.add(p);}
+        else{
+            System.out.println("Ce Point est déjà existant");
+        }
+
     }
 
     public void remove(Point p){
         this.points.remove(p);
     }
 
-    public void contientPoints(Point p){
-        System.out.println(this.points.contains(p));
+    public boolean contientPoints(Point p){
+
+        return this.points.contains(p);
     }
 
     public void String() {
         System.out.println(this.points);
+    }
+
+
+    public void size(){
+        System.out.println("La taille est " + this.points.size());
     }
 
 }

@@ -1,15 +1,12 @@
-import java.util.LinkedList;
+import java.util.*;
 
-public class LigneBriseeLinkedList {
+public class LigneBriseeHashSet {
 
-    private LinkedList<Point> points;
+    private HashSet<Point> points;
 
-    public LigneBriseeLinkedList(LinkedList<Point> points){
-        this.points = new LinkedList<Point>();
-    }
+    public LigneBriseeHashSet(){
 
-    public LigneBriseeLinkedList(){
-        this.points = new LinkedList<Point>();
+        this.points = new HashSet();
     }
 
     // Autre Methodes
@@ -27,11 +24,6 @@ public class LigneBriseeLinkedList {
         this.points.remove(p);
     }
 
-    public boolean contientPoints(Point p){
-
-        return this.points.contains(p);
-    }
-
     public int size(){
         return this.points.size();
     }
@@ -40,4 +32,7 @@ public class LigneBriseeLinkedList {
         System.out.println(this.points);
     }
 
+    public boolean contientPoints(Point p){
+        return this.points.contains(p);
+    }
 }
