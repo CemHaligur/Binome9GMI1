@@ -39,7 +39,7 @@ public class CDTheque implements Iterable<CDAudio>{
         boolean valider;
 
         if(indexISBN.containsKey(cd.getIsbn()) || indexArtisteTitre.containsKey(keyAT(cd)) ||
-            indexArtisteTitre.containsKey(keyST(cd))){
+            indexStyleTitre.containsKey(keyST(cd))){
             return false;
         }
 
